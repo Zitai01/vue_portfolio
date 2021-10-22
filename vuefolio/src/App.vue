@@ -1,28 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Nav />
+    <a href="#hobby">Hobby</a>
+    <Home />
+    <Works />
+    <button v-scroll-to="'#app'" >Back Top</button>
+    <main>
+      
+      <div id="hobby">come here</div>
+    </main>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Home from './pages/Home.vue'
+import Nav from './components/Nav.vue'
+import Works from './pages/Works.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Nav,Home,Works
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
