@@ -1,5 +1,7 @@
 <template>
-    <div class="intro">Hello! I'm Zitai</div>
+    <div class="home">
+        <div class="intro">Hello! I'm Zitai</div>
+    </div>
 </template>
 
 <script>
