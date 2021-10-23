@@ -1,5 +1,7 @@
 <template>
-    <div class="projectcard"></div>
+    <div class="projectcard">
+        <h2>{{project.name}}</h2>
+    </div>
 </template>
 
 <script>
