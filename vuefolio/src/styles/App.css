@@ -19,11 +19,12 @@ header{
 .home{
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .about{
-    height: 50vh;
+    margin-bottom: 30vh;
 }
 input,textarea {
     border-radius: 1em;
@@ -34,13 +35,20 @@ input{
     height: 2em;
 }
 button{
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1em;
     border-radius: 1em;
-    border: 1px solid black;
+    border: 0;
+    background-color: transparent;
 }
-.contact,form, .services, .projects{
+button:hover{
+    background-color:rgb(215, 215, 215);
+}
+.contact,form, .services, .projects , .about{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
 }
 .input_title{
     width: 25em;
@@ -48,4 +56,81 @@ button{
 
 textarea{
     width: 25em;
+}
+
+.forms{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75vw;
+    border-top: 1px solid black;
+}
+form{
+margin: 1.5em;
+}
+.socials{
+    margin: 3em;
+    
+}
+.icon{
+    margin-right: 1em;
+    position: relative;
+    top: 0.5em;
+}
+a{
+    height: 8px;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+a:hover{
+    color:rgb(215, 215, 215) ;
+}
+
+.about{
+    width: 80vw;
+}
+#app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.profile_pic{
+    width: 30vw;
+    margin: 2em;
+}
+.skill_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 35vw;
+}
+.skill{
+    margin: 1em;
+}
+h4{
+    margin: 2em;
+}
+.projectpic{
+    width: 20em;
+}
+.projectcard{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.projects{
+    width: 80vw;
+    margin-bottom: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }

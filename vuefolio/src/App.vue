@@ -33,7 +33,7 @@ export default {
 methods:{
   updatePos(){
     this.posY = window.scrollY
-    console.log(this.posY)
+    
   }
 },
 mounted(){

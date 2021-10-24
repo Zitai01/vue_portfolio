@@ -1,13 +1,13 @@
 <template>
     <header>
-        <h2>Logo</h2>
+        <img src="../assets/cv_resume2.png" alt="">
         <div class="links">
-            <button v-scroll-to="'#app'" >Introduction</button>
+            <button v-scroll-to="'#app'" > <strong>Intro</strong> </button>
             
-            <button v-scroll-to="'.about'" >About</button>
-            <button v-scroll-to="'.projects'">Work</button>
-            <button v-scroll-to="'#hobby'" >Blog</button> 
-            <button v-scroll-to="'.contact'" >Contact Me</button>
+            <button v-scroll-to="'.about'" ><strong>About</strong> </button>
+            <button v-scroll-to="'.work'"><strong>Work</strong> </button>
+            <!-- <button v-scroll-to="'#hobby'" > <strong>Blog</strong> </button>  -->
+            <button v-scroll-to="'.contact'" > <strong>Contact Me</strong> </button>
 
         </div>
         

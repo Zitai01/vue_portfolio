@@ -1,7 +1,31 @@
 <template>
     <div class="contact">
         <h1>Contact Me</h1>
+        <div>Don't worry, I'm fully vaccined.</div>
+        <div class="forms">
+            <div>
+            
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/zitai-huang/">
+            <img class="icon" src="../assets/linkedin-logo-2.png" alt="icon">
+            Linkedin
+            </a>
+            </div>
+            <div class="socials" >
+                <a href="https://github.com/Zitai01">
+                <img class="icon" src="../assets/github.png" alt="icon">
+                Github
+            </a>
+            </div>
+            <div class="socials">
+            <img class="icon" src="../assets/email.png" alt="icon">
+            E-mail: zpassiont@gmail.com
+            </div>
+            
+            
+             </div>
         <form @submit.prevent>
+            <div>Form still in Construction, Coming soon!</div>
             <div>
                 <input placeholder="Enter your name" type="text">
                 <input placeholder="Your e-mail address" type="email">
@@ -9,8 +33,9 @@
             
             <input placeholder="Ttile" type="title" class="input_title">
             <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
-            <button>Send</button>
+            <button>Send me a message</button>
         </form>
+        </div>
     </div>
 </template>
 <script>
