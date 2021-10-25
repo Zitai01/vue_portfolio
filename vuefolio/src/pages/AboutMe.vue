@@ -5,7 +5,7 @@
         <div class="profile">
         <div>
             <h4>Software Engineer</h4>
-        <p>Results-driven Full Stack Software Engineer with the mathematics background,
+        <p>Results-driven Full Stack Software Engineer with mathematics background,
             develop, dedicates to deliver applications which meet and exceed demanding corporate and client requirements.
             able to collaborate with individuals from diverse backgrounds. Recently completed General Assembly’s Software Engineering Immersive Program</p>
         <h4>Skills</h4>

@@ -26,7 +26,7 @@
              </div>
         <form @submit.prevent>
             <div>Form still in Construction, Coming soon!</div>
-            <div>
+            <div class="inputs">
                 <input placeholder="Enter your name" type="text">
                 <input placeholder="Your e-mail address" type="email">
             </div>

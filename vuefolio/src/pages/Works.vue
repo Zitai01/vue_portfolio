@@ -4,7 +4,15 @@
         <div class="projects" >
         <div  :key="project.id" v-for="project in projects" >
             <ProjectCard :project="project" />
+            
         </div>
+        <!-- <div class="projectcard" >
+            <h2>Sudoku.ZH</h2>
+            <p>A vanilla JavaScript sudoku game only using JavaScript, CSS and HTML.</p>
+            //<img class="projectpic" src="../assets/sudoku.png" alt="">
+            <a href="./static/js_sudoku/index.html" target="_blank">Play it now</a>
+            
+        </div> -->
         </div>
         </div>
 </template>
@@ -18,7 +26,9 @@ const projectarray = [
         name:'Trackday Cars',
         skills:['React','Express','MongoDB','Mongoose'],
         pic:'trackdaycar.png',
-        detail:'Full-stack MERN project.'
+        detail:'Full-stack MERN project.',
+        links:'https://murmuring-sands-34948.herokuapp.com/',
+        comments:'Links'
     },
     {
         id:1,
@@ -26,6 +36,15 @@ const projectarray = [
         skills:['Express','Vue.js','Discord.js','Sequeilze','PostgreSQL','Oauth2'],
         pic:'wingmanbot.png',
         detail:'Full-stack PEVN project with oauth2 Authentication.'
+    },
+    {
+        id:2,
+        name:'Sudoku.ZH',
+        skills:['JavaScript','CSS','HTML'],
+        pic:'sudoku.png',
+        detail:'A vanilla JavaScript sudoku game.',
+        links:'/static/js_sudoku/index.html',
+        comments:'Play it now!'
     }
 ]
 
