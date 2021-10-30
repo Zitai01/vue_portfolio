@@ -24,22 +24,43 @@
             
             
              </div>
-        <form @submit.prevent>
-            <div>Form still in Construction, Coming soon!</div>
+        <form @submit.prevent="sendEmail" ref="form"   >
+           
             <div class="inputs">
-                <input placeholder="Enter your name" type="text">
-                <input placeholder="Your e-mail address" type="email">
+                <input placeholder="Enter your name" type="text"  name="name">
+                <input placeholder="Your e-mail address" type="email" name="email">
             </div>
             
-            <input placeholder="Ttile" type="title" class="input_title">
-            <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+            <input placeholder="Ttile" type="title" class="input_title"  name="title">
+            <textarea placeholder="Message"  id="" cols="30" rows="10" name="message" ></textarea>
             <button>Send me a message</button>
         </form>
         </div>
     </div>
 </template>
 <script>
+import emailjs from 'emailjs-com'
+
 export default {
-    name:'ContactMe'
+    name:'ContactMe',
+    methods:{
+        sendEmail() {
+            emailjs.sendForm('service_xhmelzd', 'template_u70c3pq', this.$refs.form, 'user_wJoZQDCawq8BU2WLgQOYV')
+                .then((result) => {
+                    console.log('SUCCESS!', result.text);
+                    alert('Message sent, thank you.')
+
+
+                }, (error) => {
+                    console.log('FAILED...', error.text);
+                });
+            this.$refs.form.title.value=''
+            this.$refs.form.name.value=''
+            this.$refs.form.email.value=''
+            this.$refs.form.message.value=''
+
+
+    }
+    }
 }
 </script>

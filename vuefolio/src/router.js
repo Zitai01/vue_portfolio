@@ -1,9 +1,9 @@
 import VueRouter from 'vue-router'
 import Home from './pages/Home'
-import Hobby from './pages/Hobby'
+import Resume from './pages/Resume'
 const routes = [
   { path: '/', component: Home, name: 'Home' },
-  { path: '/hobby', component: Hobby, name: 'Hobby' }
+  { path: '/resume', component: Resume, name: 'Resume' }
 ]
 
 export default new VueRouter({

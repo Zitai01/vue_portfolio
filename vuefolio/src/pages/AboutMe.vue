@@ -6,8 +6,13 @@
         <div>
             <h4>Software Engineer</h4>
         <p>Results-driven Full Stack Software Engineer with mathematics background,
-            develop, dedicates to deliver applications which meet and exceed demanding corporate and client requirements.
+             dedicates to deliver applications which meet and exceed demanding corporate and client requirements.
             able to collaborate with individuals from diverse backgrounds. Recently completed General Assembly’s Software Engineering Immersive Program</p>
+        
+        </div>
+        
+        <img class="profile_pic" src="../assets/avatar.png" alt="">
+        </div>
         <h4>Skills</h4>
         <div class="skill_list">
             <div class="skill">HTML</div>
@@ -24,18 +29,6 @@
             <div class="skill">Flask</div>
             <div class="skill">SQLAlchemy</div>
             <div class="skill">Discord.js</div>
-       
-
-
-
-
-
-
-
-        </div>
-        </div>
-        
-        <img class="profile_pic" src="../assets/avatar.png" alt="">
         </div>
     </div>
 </template>

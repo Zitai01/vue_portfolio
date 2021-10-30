@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Nav />
+    
     <Home />
     <AboutMe />
     <Services />
