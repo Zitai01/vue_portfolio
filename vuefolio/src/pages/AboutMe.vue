@@ -1,6 +1,6 @@
 <template>
     <div class="about">
-        
+        <div class="gap"></div>
         <div><h1>About Me</h1></div>
         <div class="profile">
         <div>
@@ -22,7 +22,7 @@
             <div class="skill">React</div>
             <div class="skill">Vue.js</div>
             <div class="skill">Express</div>
-            <div class="skill">MongodB</div>
+            <div class="skill">MongoDB</div>
             <div class="skill">Sequelize</div>
             <div class="skill">PostgreSQL</div>
             <div class="skill">Python</div>

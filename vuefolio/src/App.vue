@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Nav />
+    <Nav     />
     
     <Home />
     <AboutMe />
@@ -26,24 +26,7 @@ export default {
   name: 'App',
   components: {
     Nav,Home,Works,AboutMe,ContactMe,Services
-  },
-  data:()=>({
-    posY:null
-  }),
-
-methods:{
-  updatePos(){
-    this.posY = window.scrollY
-    
   }
-},
-mounted(){
-  window.addEventListener('scroll', this.updatePos)
-  console.log(window.innerHeight)
-},
-destroyed(){
-  window.removeEventListener('scroll', this.updatePos)
-}
 }
 </script>
 

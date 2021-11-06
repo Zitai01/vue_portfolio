@@ -2,12 +2,19 @@ a{
     display: flex;
     align-items: center;
 }
-header{
+.header{
+    transform:translateY(0);
+    transition:  0.4s all ease-out;
+    background-color: white;
     position: fixed;
     top: 0;
     width: 100vw    ;
     display: flex;
     justify-content: space-between;
+}
+.header.hidden{
+    box-shadow: none;
+    transform:translateY(-100%);
 }
 .github{
     margin-bottom: 2vh;
@@ -19,8 +26,15 @@ header{
     margin-right: 4em;
 }
 .intro{
+    font-weight: bold;
     font-size: 40px;
     text-align: center;
+}
+.subintro{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(80, 80, 80);
 }
 .home{
     height: 100vh;
@@ -46,7 +60,7 @@ button{
     margin: 1em;
     border-radius: 1em;
     border: 0;
-    background-color: transparent;
+    background-color: white;
 }
 button:hover{
     background-color:rgb(215, 215, 215);
@@ -173,4 +187,18 @@ h4{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+#logo{
+
+margin-left: 30px;
+margin-top: 15px;
+}
+.gap{
+    height: 6em;
+}
+
+@media only screen and (max-width:600px){
+    .forms{
+        flex-direction: column;
+    }
 }

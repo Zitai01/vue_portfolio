@@ -1,6 +1,6 @@
 <template>
-    <header>
-        <img src="../assets/cv_resume2.png" alt="">
+    <header class="header" :class="{'hidden':!showNav}">
+        <img id="logo" src="../assets/cv_resume2.png" alt="">
         <div class="links">
             <button v-scroll-to="'#app'" > <strong>Intro</strong> </button>
             
@@ -19,5 +19,30 @@
 <script>
 export default {
     name:'Nav'
+    ,
+  data:()=>({
+    showNav:true,
+    posY:0
+  }),
+
+methods:{
+  updatePos(){
+    const currentPosY = window.scrollY
+    if (currentPosY < this.posY){
+      this.showNav = true
+    }else {
+      this.showNav = false
+    }
+    this.posY = currentPosY
+    
+  }
+},
+mounted(){
+  window.addEventListener('scroll', this.updatePos)
+//   console.log(window.innerHeight)
+},
+destroyed(){
+  window.removeEventListener('scroll', this.updatePos)
+}
 }
 </script>

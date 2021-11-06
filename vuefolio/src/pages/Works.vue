@@ -1,5 +1,6 @@
 <template>
     <div  class="work">
+        <div class="gap" ></div>
         <h1>My Projects</h1>
         <div class="projects" >
         <div  :key="project.id" v-for="project in projects" >
@@ -26,9 +27,9 @@ const projectarray = [
         name:'Trackday Cars',
         skills:['React','Express','MongoDB','Mongoose'],
         pic:'trackdaycar.png',
-        detail:'Full-stack MERN project.',
+        detail:'Trackday Cars is a Full-stack MERN project that helps people understand more about cars that used on both road and racetrack.',
         links:'https://murmuring-sands-34948.herokuapp.com/',
-        comments:'Links',
+        comments:'Visit',
         github:'https://github.com/Zitai01/TrackdayCar'
     },
     {
@@ -36,8 +37,10 @@ const projectarray = [
         name:'The Wingman bot',
         skills:['Express','Vue.js','Discord.js','Sequeilze','PostgreSQL','Oauth2'],
         pic:'wingmanbot.png',
-        detail:'Full-stack PEVN project with oauth2 Authentication.',
-        github:'https://github.com/Zitai01/The_WingmanBot'
+        detail:"The wingman bot is a discord bot with it's own full-stack PEVN website,it is my biggest personal project, after authurize it to your discord guild, you can use it by typing commands like 'wb joke', then the bot will tell a random joke in the same channel.\n I also utilized oauth2 authentication to improve the safety of the website and simplize the login process. ",
+        github:'https://github.com/Zitai01/The_WingmanBot',
+        links:'https://wingmanbot.herokuapp.com/',
+        comments:'Visit(You will need a discord account to sign in.)'
 
     },
     {
@@ -45,7 +48,7 @@ const projectarray = [
         name:'Sudoku.ZH',
         skills:['JavaScript','CSS','HTML'],
         pic:'sudoku.png',
-        detail:'A vanilla JavaScript sudoku game.',
+        detail:'A responsive and fun vanilla JavaScript weekend project.',
         links:'/static/sudoku/index.html',
         comments:'Play it now!',
         github:'https://github.com/Zitai01/js_sudoku'

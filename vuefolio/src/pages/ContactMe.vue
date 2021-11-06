@@ -1,7 +1,8 @@
 <template>
     <div class="contact">
+        <div class="gap"></div>
         <h1>Contact Me</h1>
-        <div>Don't worry, I'm fully vaccined.</div>
+        <div>Don't worry, I'm fully vaccinated.</div>
         <div class="forms">
             <div>
             
@@ -19,9 +20,11 @@
             </div>
             <div class="socials">
             <img class="icon" src="../assets/email.png" alt="icon">
-            E-mail: zpassiont@gmail.com
+            zpassiont@gmail.com
             </div>
-            
+            <div class="socials"> 
+                <a href="https://docs.google.com/document/d/1WwANQjrzeuyCfMqZWLKAV7oulQj4F6yHhX7g-0Vum0k/edit?usp=sharing" target="_blank" >My Resume</a>
+            </div>
             
              </div>
         <form @submit.prevent="sendEmail" ref="form"   >
