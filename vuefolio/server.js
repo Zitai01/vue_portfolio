@@ -12,7 +12,7 @@ app.get(/.*/, function(req, res) {
   res.sendFile(path.join(__dirname, '/dist/index.html'))
 })
 app.get('/static/sudoku', function(req, res) {
-  res.sendFile(path.join(__dirname, '/js_sudoku/index.html'))
+  res.sendFile(path.join(__dirname, '/js_sudoku/sudoku.html'))
 })
 
 const port = process.env.PORT || 8080

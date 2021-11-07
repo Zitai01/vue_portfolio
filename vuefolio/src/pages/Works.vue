@@ -49,7 +49,7 @@ const projectarray = [
         skills:['JavaScript','CSS','HTML'],
         pic:'sudoku.png',
         detail:'A responsive and fun vanilla JavaScript weekend project.',
-        links:'/static/sudoku/index.html',
+        links:'/static/sudoku/sudoku.html',
         comments:'Play it now!',
         github:'https://github.com/Zitai01/js_sudoku'
     }
