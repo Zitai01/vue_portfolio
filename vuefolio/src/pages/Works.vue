@@ -23,14 +23,14 @@
 import ProjectCard from '../components/ProjectCard.vue'
 const projectarray = [
     {
-        id:0,
-        name:'Trackday Cars',
-        skills:['React','Express','MongoDB','Mongoose'],
-        pic:'trackdaycar.png',
-        detail:'Trackday Cars is a Full-stack MERN project that helps people understand more about cars that used on both road and racetrack.',
-        links:'https://murmuring-sands-34948.herokuapp.com/',
-        comments:'Visit',
-        github:'https://github.com/Zitai01/TrackdayCar'
+        id:2,
+        name:'Sudoku.ZH',
+        skills:['JavaScript','CSS','HTML'],
+        pic:'sudoku.png',
+        detail:'A responsive and fun vanilla JavaScript weekend project.',
+        links:'https://ztsudoku.surge.sh/',
+        comments:'Play it now!',
+        github:'https://github.com/Zitai01/js_sudoku'
     },
     {
         id:1,
@@ -44,15 +44,16 @@ const projectarray = [
 
     },
     {
-        id:2,
-        name:'Sudoku.ZH',
-        skills:['JavaScript','CSS','HTML'],
-        pic:'sudoku.png',
-        detail:'A responsive and fun vanilla JavaScript weekend project.',
-        links:'/static/sudoku/sudoku.html',
-        comments:'Play it now!',
-        github:'https://github.com/Zitai01/js_sudoku'
+        id:0,
+        name:'Trackday Cars',
+        skills:['React','Express','MongoDB','Mongoose'],
+        pic:'trackdaycar.png',
+        detail:'Trackday Cars is a Full-stack MERN project that helps people understand more about cars that used on both road and racetrack.',
+        links:'https://murmuring-sands-34948.herokuapp.com/',
+        comments:'Visit',
+        github:'https://github.com/Zitai01/TrackdayCar'
     }
+    
 ]
 
 export default {
